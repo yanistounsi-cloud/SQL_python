@@ -42,6 +42,10 @@ ID (PK) / NOM / PRENOM / NOTE / ADRESSE / VILLE / CLASSE / INTERET_POUR_GEOGRAPH
 03x      Diallo Lilian   17     adresse2          classe1               OUI                null
 07x      Lin    Tony     15    adresse7  Sarcelles   classe2            NON                OUI
 
+#LEFT ANTI JOIN 
+CERCLE A CERCLE B : je veux uniquement les eleves qui se trouvent dans le cercle A et qui ne sont pas dans le cercle B 
+J'ai envie de proposer un cours supplémentaire (cours de géographie) aux eleves, qui ne peuvent pas 
+
 
 
 
