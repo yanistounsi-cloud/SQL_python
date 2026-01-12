@@ -1,0 +1,48 @@
+#JOINS (JOINTURES)
+- joint des tables entres elles sur des critères (colonnes) : on choisit les colonnes clés (keys)
+
+EXEMPLE:
+2 tables sur les étudiants
+- tables cours_de_musique
+- tables cours_de_danse
+
+cours_de_musique:  (CERCLE A)
+
+ID (PK) / NOM / PRENOM / NOTE / ADRESSE / VILLE / CLASSE / INTERET_POUR_GEOGRAPHIE
+01x Dupont JEAN     17     adresse1  Paris   classe1               OUI
+03x Diallo Lilian   17     adresse2  Creteil   classe1             OUI
+07x Lin    Tony     15    adresse7  Sarcelles   classe2            NON
+
+cours_de_danse:  (CERCLE B)
+
+ID (PK) / NOM / PRENOM / NOTE / ADRESSE / VILLE / CLASSE / PERMIS_B
+01x Dupont JEAN     13     adresse1  Paris   classe1         OUI
+02x kumar  Pierre   13     adresse5  Lille   classe1         NON
+07x Lin    Tony     15     adresse7  Sarcelles classe2       OUI
+
+PRIMARY KEY : 
+- c'est une colonne qui ne conteient aucune valeur nulle 
+- chaque valeur est unique
+
+#INNER JOIN
+Quelles sont les émèves qui vont aux deux cours?
+joindre 2 tables entre elles sur des critères communs
+NOUVELLE TABLE:
+
+ID (PK) / NOM / PRENOM / NOTE / ADRESSE / VILLE / CLASSE
+01x      Dupont JEAN     13     adresse1  Paris   classe1
+07x      Lin    Tony     15     adresse7  Sarcelles classe2
+
+
+#LEFT JOIN
+Quels sont les eleves qui vont uniquement aux cours de musique et qui ont le permis de conduire ? 
+
+ID (PK) / NOM / PRENOM / NOTE / ADRESSE / VILLE / CLASSE / INTERET_POUR_GEOGRAPHIE / PERMIS_B
+01x      Dupont JEAN     17     adresse1  Paris   classe1               OUI                OUI
+03x      Diallo Lilian   17     adresse2          classe1               OUI                null
+07x      Lin    Tony     15    adresse7  Sarcelles   classe2            NON                OUI
+
+
+
+
+
